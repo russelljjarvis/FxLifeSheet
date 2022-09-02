@@ -105,6 +105,10 @@ There are many questions that can be answered using this data, here are some mai
 
 ## Implementation
 
+```
+npm install
+```
+
 **Assumptions**
 
 - The user is in random time zones at random times and switches often, therefore the bot can't know about your daily schedule. This puts a lot of focus on averages, as it doesn't matter if a value was entered at 11pm that day, or 8am the next one, the numbers will even out, as only daily, weekly and monthly averages are considered when rendering graphs.
