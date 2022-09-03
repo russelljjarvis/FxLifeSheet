@@ -12,6 +12,57 @@
 <img src="https://raw.githubusercontent.com/KrauseFx/howisFelix.today/master/screenshots/Overview-Portrait-1.png" />
 
 ---
+## Implementation
+
+```
+npm install
+npm run scheduler
+```
+
+### Setup
+
+### Environment variables
+
+`.keys` file or however you manage your secret env variables:
+
+```
+export TELEGRAM_BOT_TOKEN=""
+export TELEGRAM_USER_ID=""
+export TELEGRAM_CHAT_ID=""
+
+export DATABASE_URL=""
+
+export LIFESHEET_JSON_URL=""
+```
+## Development
+
+### Running locally
+
+```
+npm run dev
+```
+
+
+### Debugging
+
+After using `npm run dev`, open [chrome://inspect](chrome://inspect) to use the Chrome Dev Tools
+
+### Scheduler
+
+Not using Heroku any more, in railway.app, just add this as its own service
+
+```
+npm run scheduler
+```
+
+
+### This repo contains
+
+- The [Telegram bot](https://github.com/KrauseFx/FxLifeSheet/blob/master/worker.ts) for entering data manually
+- The [data visualization](https://github.com/KrauseFx/FxLifeSheet/tree/master/visual_playground), check out the results on [howisFelix.today](https://howisFelix.today)
+- The [database info](https://github.com/KrauseFx/FxLifeSheet/blob/master/db/create_tables.sql)
+
+---
 
 ## Goals
 
@@ -33,13 +84,6 @@
 
 ---
 
-### This repo contains
-
-- The [Telegram bot](https://github.com/KrauseFx/FxLifeSheet/blob/master/worker.ts) for entering data manually
-- The [data visualization](https://github.com/KrauseFx/FxLifeSheet/tree/master/visual_playground), check out the results on [howisFelix.today](https://howisFelix.today)
-- The [database info](https://github.com/KrauseFx/FxLifeSheet/blob/master/db/create_tables.sql)
-
----
 
 ### Questions to answer
 
@@ -84,11 +128,7 @@ There are many questions that can be answered using this data, here are some mai
 - Do I stick to my yearly book goals and how do other factors influence how much I'm reading?
 - Am I more productive when I set the goals for the day the night before?
 
-## Implementation
 
-```
-npm install
-```
 
 **Assumptions**
 
@@ -207,41 +247,7 @@ week - Once per week metrics
 skip_all - Remove all queued questions
 ```
 
-## Development
 
-### Running locally
-
-```
-npm run dev
-```
-
-### Debugging
-
-After using `npm run dev`, open [chrome://inspect](chrome://inspect) to use the Chrome Dev Tools
-
-### Setup
-
-### Environment variables
-
-`.keys` file or however you manage your secret env variables:
-
-```
-export TELEGRAM_BOT_TOKEN=""
-export TELEGRAM_USER_ID=""
-export TELEGRAM_CHAT_ID=""
-
-export DATABASE_URL=""
-
-export LIFESHEET_JSON_URL=""
-```
-
-### Scheduler
-
-Not using Heroku any more, in railway.app, just add this as its own service
-
-```
-npm run scheduler
-```
 
 ### Postgres
 
