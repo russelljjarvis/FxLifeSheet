@@ -5,7 +5,6 @@
 
 ### See the outcome on [howisFelix.today](https://howisFelix.today/)
 
-<img src="https://raw.githubusercontent.com/KrauseFx/howisFelix.today/master/screenshots/Desktop-1.png" />
 
 <h3 align=center>See the resulting work on <a href="https://howisFelix.today/">howisFelix.today</a>
 <p />
